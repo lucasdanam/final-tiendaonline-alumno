@@ -30,5 +30,17 @@ public class BigTest {
 	        assertEquals(catalogo.obtenerProducto("Raspberry Pi 3").getStock(),3);
 	        
 	    }
+	 
+	 @Test
+	 
+	 	public void agregar1ProductoAlPedidoYObtenerLaCantidadPedida() {
+	 	
+	 		Pedido pedido= new Pedido();
+	 		
+	 		pedido.agregarProducto("odroid", 3);
+	 		
+	 		assertEquals(pedido.getCantidad("odroid"),3);
+ 
+	 	}
 
 }
