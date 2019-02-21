@@ -5,8 +5,8 @@ public class CatalogoProductos {
 	
 	 Map<String, Producto> productos = new HashMap<String, Producto>();
 
-	public void agregarProducto(String nombre, Producto producto) {
-		productos.put(nombre, producto);
+	public void agregarProducto(Producto producto) {
+		productos.put(producto.getNombre(), producto);
 	}
 
 	public Producto obtenerProducto(String string) {

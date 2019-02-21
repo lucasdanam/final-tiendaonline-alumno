@@ -24,7 +24,7 @@ public class BigTest {
 	        
 	        raspberry.setStock(3);
 	        
-	        catalogo.agregarProducto(raspberry.getNombre(), raspberry);
+	        catalogo.agregarProducto(raspberry);
 
 	        assertEquals(catalogo.obtenerProducto("Raspberry Pi 3").getPrecio(),3500);
 	        assertEquals(catalogo.obtenerProducto("Raspberry Pi 3").getStock(),3);
